@@ -3,22 +3,9 @@ Tests custom rdflib tools
 
 """
 import rdflib
-from urllib.parse import urlsplit, urlunsplit
-from rdflib import Graph, URIRef, RDF
-# from rdflib.compare import graph_diff
-from jinja2 import Template
-from metadata_writer.logger.cmw_logger import logger
-from metadata_writer.commons.query_class import QueryRetriever
-from metadata_writer.commons.constants import Constants
-from metadata_writer.commons.rdf_utils import are_same_graphs, get_updated_graphs_diffs
 import pytest
 import pytest
-import os
-import glob
-from os import path
 import rdfc10
-from rdfc10.rdfc10 import Rdfc10
-from rdflib import Graph
 from rdflib.compare import to_isomorphic, graph_diff
 
 
